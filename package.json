@@ -1,0 +1,48 @@
+{
+  "name": "testexpress",
+  "version": "1.0.0",
+  "description": "Experiment with express and typescript",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsx --watch --env-file .env src/index.ts",
+    "start": "node --env-file .env dist/index.js",
+    "build": "tsc",
+    "type-check": "tsc --noEmit",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rjmatthews62/testexpress.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/rjmatthews62/testexpress/issues"
+  },
+  "homepage": "https://github.com/rjmatthews62/testexpress#readme",
+  "dependencies": {
+    "express": "^5.2.1",
+    "moment": "^2.30.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.2",
+    "@tsconfig/node22": "^22.0.5",
+    "@types/express": "^5.0.6",
+    "@types/node": "^25.0.3",
+    "eslint": "^9.39.2",
+    "eslint-plugin-perfectionist": "^5.1.0",
+    "prettier": "^3.7.4",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.50.1"
+  },
+  "imports": {
+    "#*": "./src/*"
+  }
+}
